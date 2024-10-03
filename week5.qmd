@@ -1,6 +1,5 @@
 ---
 title: "Reflection Exercise 4"
-author: Sophia Brothers
 format: pdf
 editor: visual
 bibliography: references.bib
@@ -23,6 +22,8 @@ ipums_extract <-
 ```
 
 Data was obtained through Integrated Public Use Microdata Series USA (IPUMS USA) [@ipumsusa] and contains data surrounding the 2022 American Community Survey (ACS). Two variables were extracted from the 2022 ACS: STATEICP and EDUC. After selecting the correct data and converting the file from a .dat to a .dta, you could download the data extract from IPUMS USA. You then unzip the file and import it into R [@citeR].
+
+This analysis uses the dplyr, tidyr, and haven packages in order to synthesize the data [@tidyverse].
 
 The ratio estimators approach was used in order to estimate the total number of respondents in each state. This approach allows you to take the ratio between two means for a subset of your data in which you know both values, and broad apply it to the broader pool in which you only have one of the two values needed. Given the actual number of respondents in California and after extracting the number of doctoral respondents in California, we were able to determine the ratio of respondents to doctoral respondents. This ratio was then applied to the number of doctoral respondent in every state, giving us an estimated total number of respondents per state.
 
@@ -67,5 +68,5 @@ comparison <- estimated_total %>%
 # print table comparing values
 print(comparison, n=51)
 ```
-
+\newpage
 ## References {#bibliography}
