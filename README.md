@@ -9,8 +9,10 @@ This repo creates a short paper that analyzes the ratio estimates using data of 
 
 The repo is structured as:
 
--   `week5.qmd` contains the written analysis and code of the paper. 
--   `references` contains the citations of other papers that were referred to in the paper.  
+-   `week5.qmd` contains the written analysis and code of the paper.
+-   `week5.pdf` contains the reflection itself
+-   `week5.Rproj` is the R project
+-   `references.bib` contains the citations referred to in the reflection.  
 
 
 ## Statement on LLM usage
